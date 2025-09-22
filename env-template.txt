@@ -1,0 +1,12 @@
+# Server Configuration
+PORT=3000
+
+# AWS Configuration
+AWS_REGION=ap-south-1
+
+# AWS Cognito Configuration
+COGNITO_USER_POOL_ID=your-user-pool-id-here
+COGNITO_CLIENT_ID=your-client-id-here
+
+# Logging
+LOG_LEVEL=info

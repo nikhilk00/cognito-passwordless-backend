@@ -1,0 +1,43 @@
+{
+  "id": "cognito-auth-env",
+  "name": "Cognito Auth Environment",
+  "values": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "description": "Base URL for the API server",
+      "enabled": true
+    },
+    {
+      "key": "session",
+      "value": "",
+      "description": "Session token from start authentication",
+      "enabled": true
+    },
+    {
+      "key": "accessToken",
+      "value": "",
+      "description": "JWT access token from successful authentication",
+      "enabled": true
+    },
+    {
+      "key": "idToken",
+      "value": "",
+      "description": "JWT ID token from successful authentication",
+      "enabled": true
+    },
+    {
+      "key": "refreshToken",
+      "value": "",
+      "description": "Refresh token for getting new access tokens",
+      "enabled": true
+    },
+    {
+      "key": "testPhone",
+      "value": "+919876543210",
+      "description": "Test phone number for authentication",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment"
+}
