@@ -11,6 +11,10 @@ export async function startAuth(
     const phoneRaw = req.body.phone;
     if (!phoneRaw) return res.status(400).json({ error: "phone required" });
     const phone = toE164(phoneRaw);
+
+    // Ensure user exists with phone_number attribute
+    await cognitoService.createUserIfNotExists(phone);
+
     const resp = await cognitoService.initiateAuth(phone);
     return res.json({ challenge: resp.ChallengeName, session: resp.Session });
   } catch (err) {
